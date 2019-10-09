@@ -1,9 +1,87 @@
-*Địa chỉ IP* (IP: Internet Protocol - Giao thức Internet) là một địa chỉ mà các thiết bị ngày nay dùng để liên lạc với nhau  trên mạng máy tính bằng cách sử dụng giao thức Internet.
+**Địa chỉ IP** (IP: Internet Protocol - Giao thức Internet) là một địa chỉ mà các thiết bị ngày nay dùng để liên lạc với nhau  trên mạng máy tính bằng cách sử dụng giao thức Internet.
 
-Internet Protocl Version 4 ( IPv4) định nghĩa một địa chỉ IP là một số 32-bit ( 32 bit dùng để mã hóa dữ liệu ), và được chia thành 4 cụm mỗi cụm gồm 8 bit (octet), các octet lại được biểu thị thành các số thập phân và được ngăn cách nhau bởi dấu chấm.
+## Internet Protocol Version 4 ( IPv4) định nghĩa một địa chỉ IP là một số 32-bit ( 32 bit dùng để mã hóa dữ liệu ), và được chia thành 4 cụm mỗi cụm gồm 8 bit (octet), các octet lại được biểu thị thành các số thập phân và được ngăn cách nhau bởi dấu chấm.
 
-Địa chỉ IPv4 được chia làm 2 phần : network và host.
+1.Địa chỉ IPv4 được chia làm 2 phần : network và host.
 
-<img src ="https://www.google.com/imgres?imgurl=https%3A%2F%2Fanninhmang.edu.vn%2Fwp-content%2Fuploads%2F2017%2F11%2Fanh-1.png&imgrefurl=https%3A%2F%2Fanninhmang.edu.vn%2Fipv4-la-gi%2F&docid=-9pReJmPFR8nMM&tbnid=QcTt8xyp5bBULM%3A&vet=10ahUKEwiVw43JzI7lAhWmGaYKHStDCFsQMwhGKAEwAQ..i&w=757&h=361&bih=665&biw=1280&q=%C4%91%E1%BB%8Ba%20ch%E1%BB%89%20ipv4&ved=0ahUKEwiVw43JzI7lAhWmGaYKHStDCFsQMwhGKAEwAQ&iact=mrc&uact=8">
+<img src="">
 
+2.Khi đặt địa chỉ IPv4 cần chú ý:
+
+- Các bit mạng không được phép đồng thời bằng không (0). Ví Dụ : 0.0.0.12 với phần mạng là 0.0.0 và phần host là 12 => không hợp lệ.
+
+- Các bit phần host đồng thời bằng 0 ta có một địa chỉ mạng. Ví Dụ :172.16.0.0 đây là một địa chỉ mạng.
+
+- Nếu các bit phần host đồng thời bằng 1 ta có một địa chỉ Broadcast. Ví Dụ : 172.16.1.1.
+
+3.Các lớp địa chỉ IPv4
+
+IPv4 gồm có 3 lớp chính 1 lớp multicast và một lớp dự phòng
+
+Lớp A:
+
+- Địa chỉ lớp A sử dụng 1 octet đầu làm phần mạng, 3 octet còn lại được sử dụng làm phần host
+
+- Bit đầu của một địa chỉ mạng lớp A luôn được giữ là 0.
+
+- Địa chỉ lớp A nằm trong: 1.x.x.x đến 126.x.x.x.
+
+- Phần host có 24 bit => mỗi lớp mạng A có (2 mũ 24 trừ 2) host.
+
+Lớp B:
+
+- Địa chỉ lớp B sử dụng hai octet đầu làm phần mạng hai octet sau làm phần host.
+
+- Hai bit đầu của 1 địa chỉ lớp mạng B luôn được giữ là  0 1 .
+
+- Địa chỉ mạng lớp B bao gồm: 128.x.x.x =>191.255.x.x. Và có tất cả 2 mũ 14 mạng trong lớp B.
+
+- Phần host dài 16 bit do đó một lớp mạng B có ( 2 mũ 16 trừ 2 ) host.
+
+Lớp C:
+
+-Địa chỉ lớp C sử dụng 3 octet đầu làm phần mạng , một octet sau làm phần host.
+
+-Ba bit đầu của địa chỉ mạng lớp C luôn là 1 1 0.
+
+- Địa chỉ lớp C bao gồm : 192.x.x.x đến 223.255.255.x. Có tất cả 2 mũ 21 mạng trong lớp C.
+
+- Phần host có 8 bit nên lớp C có (2 mũ 8 trừ 2) host.
+
+Lớp D:
+
+-Gồm các địa chỉ thuộc dải : 244.x.x.x đến 239.255.255.255. Dùng để làm địa chỉ Multicast
+
+Lớp E:
+
+- Từ 240.x.x.x trở đi. Được dùng làm địa chỉ dự phòng
+
+NOTE: 
+- 1 đến 126  địa chỉ lớp A
+
+- 128 đến 191 địa chỉ lớp B
+
+- 192 đến 223 địa chỉ lớp C
+
+- 224 đến 239 địa chỉ lớp D
+
+- 240 đến 255 địa chỉ lớp E
+
+4. Địa chỉ Private và địa chỉ Public
+
+- Địa chỉ Private: chỉ được sử dụng trong mạng nội bộ (mạng LAN), không được định tuyến trên môi trường Internet, và được sử dụng trùng lặp trong các mạng LAN khác nhau.
+
+- Địa Chỉ Public: được sử dụng cho các gói tin đi trên môi trường Internet được định tuyến và là địa chỉ duy nhất cho mỗi host tham gia vào Internet.
+
+## Internet Protocol version 6 (IPv6): được định nghĩa là một địa chỉ có chiều dài là 128 bit được biểu diễn dưới số hexa phân cách nhau bởi dấu hai chấm (::).Với mục đích cung cấp một địa chỉ ip khổng lồ để hoạt động trên Internet.
+
+- Theo thống kê từ Google đến tháng 5 năm 2017 đã có 14% sử dụng địa chỉ IPv6 để kết nối đến  Google trong đó có 30% là từ Hoa Kỳ
+
+- Unicast Address: Là địa chỉ dùng để nhận dạng từng note một :
+...
+
+- Anycast Adderss: là địa chỉ dùng để nhận dạng một tập hợp note bao gồm nhiều note khác nhau hợp thành.
+...
+
+- Multicast Adderss: là địa chỉ dùng để nhận dạng một tập hợp note bao gồm nhiều note khác nhau hợp thành
 
