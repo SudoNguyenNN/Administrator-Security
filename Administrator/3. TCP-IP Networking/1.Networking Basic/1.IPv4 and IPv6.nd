@@ -1,1 +1,9 @@
+*Địa chỉ IP* (IP: Internet Protocol - Giao thức Internet) là một địa chỉ mà các thiết bị ngày nay dùng để liên lạc với nhau  trên mạng máy tính bằng cách sử dụng giao thức Internet.
+
+Internet Protocl Version 4 ( IPv4) định nghĩa một địa chỉ IP là một số 32-bit ( 32 bit dùng để mã hóa dữ liệu ), và được chia thành 4 cụm mỗi cụm gồm 8 bit (octet), các octet lại được biểu thị thành các số thập phân và được ngăn cách nhau bởi dấu chấm.
+
+Địa chỉ IPv4 được chia làm 2 phần : network và host.
+
+<img src ="https://www.google.com/imgres?imgurl=https%3A%2F%2Fanninhmang.edu.vn%2Fwp-content%2Fuploads%2F2017%2F11%2Fanh-1.png&imgrefurl=https%3A%2F%2Fanninhmang.edu.vn%2Fipv4-la-gi%2F&docid=-9pReJmPFR8nMM&tbnid=QcTt8xyp5bBULM%3A&vet=10ahUKEwiVw43JzI7lAhWmGaYKHStDCFsQMwhGKAEwAQ..i&w=757&h=361&bih=665&biw=1280&q=%C4%91%E1%BB%8Ba%20ch%E1%BB%89%20ipv4&ved=0ahUKEwiVw43JzI7lAhWmGaYKHStDCFsQMwhGKAEwAQ&iact=mrc&uact=8">
+
 
