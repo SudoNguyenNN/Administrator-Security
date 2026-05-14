@@ -1,4 +1,4 @@
-##Tạo NAT trên Pfsense
+## Tạo NAT trên Pfsense
 
 1. Yêu Cầu
 
@@ -15,9 +15,10 @@ Xong tạo thêm một rules mới trên cùng
 
 <img width="1147" height="946" alt="image" src="https://github.com/user-attachments/assets/a84b8241-57d1-459d-b5d5-c2d042e31fbf" />
 
- Chỉ nên sửa phần source : để các IP Private bên bạn
+ ### Chỉ nên sửa phần source : để các IP Private bên bạn
 
 Lưu lại và test kết quả ping từ private sang mạng public
 
 <img width="1155" height="816" alt="image" src="https://github.com/user-attachments/assets/9d508a49-56e1-403c-8dd1-dad5a2da9534" />
 
+Kết quả ping được từ mạng Lan sang bên ngoài internet => OK.
