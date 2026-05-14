@@ -21,4 +21,4 @@ Lưu lại và test kết quả ping từ private sang mạng public
 
 <img width="1155" height="816" alt="image" src="https://github.com/user-attachments/assets/9d508a49-56e1-403c-8dd1-dad5a2da9534" />
 
-Kết quả ping được từ mạng Lan sang bên ngoài internet => ####OK.
+Kết quả ping được từ mạng Lan sang bên ngoài internet => #### OK.
